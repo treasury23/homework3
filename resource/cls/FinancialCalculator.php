@@ -1,6 +1,6 @@
 <?php
 
-namespace resource\cls;
+namespace Resource\Cls;
 
 class FinancialCalculator extends AbstractCalculator implements CalculatorInterface
 {

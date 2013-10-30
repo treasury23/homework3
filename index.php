@@ -18,21 +18,21 @@ $twig = new Twig_Environment($loader, array(
 
 switch ($url) {
     case "/ScientificCalculator":
-        $init = InitScientificCalculator();
+        $init = initScientificCalculator();
         echo $twig->render('ScientificCalculatorTmp.html.twig', array('name' => $init));
         break;
     case "/FinancialCalculator":
-        $init = InitFinancialCalculator();
+        $init = initFinancialCalculator();
         echo $twig->render('FinancialCalculatorTmp.html.twig', array('name' => $init));
         break;
     case "/SimpleCalculator":
-        $init = InitSimpleCalculator();
+        $init = initSimpleCalculator();
         echo $twig->render('SimpleCalculatorTmp.html.twig', array('name' => $init));
         break;
     case "/":
-        $initSc = InitScientificCalculator();
-        $initFi = InitFinancialCalculator();
-        $initSi = InitSimpleCalculator();
+        $initSc = initScientificCalculator();
+        $initFi = initFinancialCalculator();
+        $initSi = initSimpleCalculator();
         echo $twig->render('MainCalculatorTmp.html.twig', array('nameSc' => $initSc,
                                                                 'nameFi' => $initFi,
                                                                 'nameSi' => $initSi));

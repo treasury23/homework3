@@ -2,11 +2,11 @@
 
 include_once 'vendor/autoload.php';
 
-use resource\cls\ScientificCalculator;
-use resource\cls\FinancialCalculator;
-use resource\cls\SimpleCalculator;
+use Resource\Cls\ScientificCalculator;
+use Resource\Cls\FinancialCalculator;
+use Resource\Cls\SimpleCalculator;
 
-function InitScientificCalculator()
+function initScientificCalculator()
 {
     $obj = new ScientificCalculator();
     $obj->setType('ScientificCalculator');
@@ -19,7 +19,7 @@ function InitScientificCalculator()
     return $obj;
 }
 
-function InitFinancialCalculator()
+function initFinancialCalculator()
 {
     $obj = new FinancialCalculator();
     $obj->setType('FinancialCalculator');
@@ -34,7 +34,7 @@ function InitFinancialCalculator()
     return $obj;
 }
 
-function InitSimpleCalculator()
+function initSimpleCalculator()
 {
     $obj = new SimpleCalculator(123, '+', 123);
     $obj->setType('SimpleCalculator');
