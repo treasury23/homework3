@@ -89,11 +89,4 @@ class AbstractCalculator
     {
         return $this->weight;
     }
-
-    public function showInfo()
-    {
-        $result = "Full information about ".$this->getType()."\nManufacturer: ". $this->getManufacturer().
-            "\nWeight: ". $this->getWeight()."g\nColor: ".$this->getColor()."\nSize: ".$this->getSize();
-        return $result;
-    }
 }

@@ -79,9 +79,4 @@ class SimpleCalculator extends AbstractCalculator implements CalculatorInterface
         }
         return $result;
     }
-    public function showDecision()
-    {
-        $result = $this->getNumber1()." ".$this->getOperator()." ".$this->getNumber2()." = ".$this->decision();
-        return $result;
-    }
 }
