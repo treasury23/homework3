@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}Full information about Calculator{% endblock %}</title>
+</head>
+{% block body %}
+	<div id='table'>
+	<table border="1" style="width: 500px;margin-bottom: 20px">
+		<tr>
+			<td>Type</td>
+			<td>{{ nameFi.type }}</td>
+		</tr>
+		<tr>
+			<td>Manufactured</td>
+			<td>{{ nameFi.manufacturer }}</td>
+		</tr>
+		<tr>
+			<td>Color</td>
+			<td>{{ nameFi.color }}</td>
+		</tr>
+		<tr>
+			<td>Size</td>
+			<td>{{ nameFi.size }}</td>
+		</tr>
+		<tr>
+			<td>Calculation %: SumCredit {{ nameFi.sumcredit }} Rate {{ nameFi.rate }}</td>
+			<td>monthly payment % {{ nameFi.percentage }} $</td>
+		</tr>
+	</table>
+		<table border="1" style="width: 500px;margin-bottom: 20px">
+			<tr>
+				<td>Type</td>
+				<td>{{ nameSc.type }}</td>
+			</tr>
+			<tr>
+				<td>Manufactured</td>
+				<td>{{ nameSc.manufacturer }}</td>
+			</tr>
+			<tr>
+				<td>Color</td>
+				<td>{{ nameSc.color }}</td>
+			</tr>
+			<tr>
+				<td>Size</td>
+				<td>{{ nameSc.size }}</td>
+			</tr>
+			<tr>
+				<td>square root {{ nameSc.squarenumber }}</td>
+				<td>{{ nameSc.square }}</td>
+			</tr>
+		</table>
+		<table border="1" style="width: 500px;margin-bottom: 20px">
+			<tr>
+				<td>Type</td>
+				<td>{{ nameSi.type }}</td>
+			</tr>
+			<tr>
+				<td>Manufactured</td>
+				<td>{{ nameSi.manufacturer }}</td>
+			</tr>
+			<tr>
+				<td>Color</td>
+				<td>{{ nameSi.color }}</td>
+			</tr>
+			<tr>
+				<td>Size</td>
+				<td>{{ nameSi.size }}</td>
+			</tr>
+			<tr>
+				<td>{{ nameSi.number1 }} {{ nameSi.operator }} {{ nameSi.number2 }}</td>
+				<td>{{ nameSi.decision }}</td>
+			</tr>
+		</table>
+	</div>
+{% endblock %}
+</html>

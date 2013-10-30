@@ -1,0 +1,19 @@
+{
+    "name": "root/homework2",
+    "authors": [
+        {
+            "name": "Musienko Viktor",
+            "email": "treasury23@gmail.com"
+        }
+    ],
+
+	"autoload": {
+		"psr-0": {
+			"resource\\": ""
+		}
+	},
+    "require": {
+		"symfony/http-foundation": "2.4.*@dev",
+		"twig/twig": "1.14.*@dev"
+    }
+}
