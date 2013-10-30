@@ -14,6 +14,7 @@
 	},
     "require": {
 		"symfony/http-foundation": "2.4.*@dev",
-		"twig/twig": "1.14.*@dev"
+		"twig/twig": "1.14.*@dev",
+		"phpunit/phpunit": "3.7.27"
     }
 }

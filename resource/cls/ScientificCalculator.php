@@ -1,6 +1,6 @@
 <?php
 
-namespace Resource\Cls;
+namespace resource\cls;
 
 class ScientificCalculator extends AbstractCalculator implements CalculatorInterface
 {

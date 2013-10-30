@@ -2,9 +2,9 @@
 
 include_once 'vendor/autoload.php';
 
-use Resource\Cls\ScientificCalculator;
-use Resource\Cls\FinancialCalculator;
-use Resource\Cls\SimpleCalculator;
+use resource\cls\ScientificCalculator;
+use resource\cls\FinancialCalculator;
+use resource\cls\SimpleCalculator;
 
 function initScientificCalculator()
 {
